@@ -1,0 +1,59 @@
+body, html {
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: #ccc;
+  font-family: Courier;
+  font-size: 25px;
+  background-color: #00334C;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00cccc;
+}
+
+.terminal-blue {
+  color : #00cccc;
+  font-weight: bolder;
+}
+
+.terminal-blue {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end);
+}
+
+.terminal-blue:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+.terminal-blue a{
+  text-decoration: none;
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
